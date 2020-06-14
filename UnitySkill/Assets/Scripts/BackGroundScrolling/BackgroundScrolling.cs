@@ -13,7 +13,7 @@ public class BackgroundScrolling : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        float t_length = m_tfBackgrounds[0].GetComponent<SpriteRenderer>().sprite.bounds.size.x;
+        float t_length = m_tfBackgrounds[0].GetComponent<SpriteRenderer>().sprite.bounds.size.x*6;
         m_leftPosX = -t_length;
         m_rightPosX = t_length * m_tfBackgrounds.Length;
     }
